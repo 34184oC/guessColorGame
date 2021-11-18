@@ -6,27 +6,32 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>THE GREAT GUESSING GAME<br>
-      <span id="display-color">RGB</span>
-    </h1>
-
-    <div id="btn-wrap">
-      <button id="reset-btn">NEW COLORS</button>
-      <button id="ez-btn" class="buttons">EASY</button>
-      <button id="hrd-btn" class="buttons selected">HARD</button>
+    <div class="container">
+      <section class="text-wrap">
+        <h1>THE GREAT GUESSING GAME</h1>
+        <span class="text-wrap__RGBColor">RGB</span>  
+      </section>
+      
+      <section class="btn-wrap">
+        <button class="btn-wrap__resetBtn jsResetBtn">NEW COLORS</button>
+        <button class="btn-wrap__easyBtn jsEasyBtn">EASY</button>
+        <button class="btn-wrap__hardBtn jsHardBtn selected">HARD</button>
+      </section>
+  
+      <section class="game-wrap">
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+        <article class="circles"></article>
+      </section>
+    
     </div>
-
-    <div id="game-wrap">
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-      <article class="circle"></article>
-    </div>
+    
 
     <script src="script.js"></script>
   </body>
