@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'LeferiPoint-BlackObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: orange;
+  color: #fff;
+  font-size: 10px;
+  font-family: 'LeferiPoint-BlackObliqueA', 'gotic';
+}
+
+
+
+/* ========= clock wrap ========== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.clock__js-clock {
+  margin-top: 150px;
+}
+
+.clock__js-clock h1 {
+  font-size: 10em;
+}
+
+
+
+/* ========= greetings ======= */
+.form, .greetings {
+  display: none;
+}
+
+.js-greetings {
+  margin-bottom: 24px;
+  font-size: 4em; 
+}
+
+.enterName, .enterTodo {
+  width: 300px;
+  height: 40px;
+  margin: 5px 0px;
+  text-align: center;
+
+  border: none;
+  border-radius: 3px;
+  font-size: 1.6em;
+  color: #999;
+}
+
+input:hover {
+  box-shadow: inset 1px 1px 4px 0px rgb(194, 194, 194);
+  transition: all .1s;
+}
+
+.js-toDoList {
+  width: 500px;
+  padding: 0;
+}
+
+.js-toDoList li {
+  position: relative;
+  
+  height: 40px;
+  margin: 10px;
+
+  list-style: none;
+  line-height: 40px;
+  font-size: 1.6em;
+}
+
+li button {
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid;
+  border-radius: 2px; 
+  background-color: unset;
+  color: #fff;
+}
+
+.showing {
+  display: block;
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  
+  background-size: 100%;
+  animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.js-weather {
+  position: absolute;
+  right: 4vw;
+  bottom: 4vh;
+
+  font-size: 1.4em;
+}
